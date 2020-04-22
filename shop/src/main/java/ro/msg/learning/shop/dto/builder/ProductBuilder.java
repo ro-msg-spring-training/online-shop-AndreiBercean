@@ -2,6 +2,8 @@ package ro.msg.learning.shop.dto.builder;
 
 import ro.msg.learning.shop.dto.ProductDTO;
 import ro.msg.learning.shop.model.Product;
+import ro.msg.learning.shop.model.ProductCategory;
+import ro.msg.learning.shop.model.Supplier;
 
 public class ProductBuilder {
     public static ProductDTO generateDTOFromEntity(Product product){
@@ -20,6 +22,22 @@ public class ProductBuilder {
     }
 
     public static Product generateEntityFromDTO(ProductDTO productDTO){
-        return new Product();
+        return new Product(
+                productDTO.getProductId(),
+                productDTO.getName(),
+                productDTO.getDescription(),
+                productDTO.getPrice(),
+                productDTO.getWeight(),
+                new ProductCategory(
+                        productDTO.getCategoryId(),
+                        productDTO.getName(),
+                        productDTO.getDescription()
+                ),
+                new Supplier(
+                        productDTO.getSupplierId(),
+                        productDTO.getName()
+                ),
+                productDTO.getImageURL()
+        );
     }
 }
