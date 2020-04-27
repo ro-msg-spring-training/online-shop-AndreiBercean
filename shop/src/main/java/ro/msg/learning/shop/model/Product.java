@@ -8,11 +8,8 @@ import java.math.BigDecimal;
 @Entity
 @Table
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class Product {
 
     @Id

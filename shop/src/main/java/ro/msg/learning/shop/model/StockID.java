@@ -6,11 +6,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Embeddable
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class StockID implements Serializable {
 
     @Column(name = "product",nullable = false)

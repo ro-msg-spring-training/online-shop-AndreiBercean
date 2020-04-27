@@ -8,11 +8,8 @@ import java.io.Serializable;
 @Entity
 @Table
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class OrderDetail implements Serializable {
 
     @EmbeddedId

@@ -9,11 +9,8 @@ import java.sql.Date;
 @Entity
 @Table
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class Revenue {
 
     @Id

@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS orders
 (`order_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
  shipped_from int,
  customer int,
- `created_at` time,
+ `created_at` timestamp,
  `address_country` varchar(100),
  `address_city` varchar(100),
  `address_county` varchar(100),

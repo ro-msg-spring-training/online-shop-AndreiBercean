@@ -7,11 +7,9 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class OrderDetailID implements Serializable {
 
     @Column(name = "orders",nullable = false)

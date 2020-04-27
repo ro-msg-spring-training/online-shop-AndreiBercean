@@ -7,11 +7,8 @@ import javax.persistence.*;
 @Entity
 @Table
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

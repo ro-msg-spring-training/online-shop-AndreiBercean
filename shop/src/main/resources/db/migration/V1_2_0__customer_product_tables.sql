@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
     `last_name` varchar(20),
     `username` varchar(20),
     `password` varchar(20),
-    `email` varchar(20)
+    `email` varchar(30)
 );
 
 CREATE TABLE IF NOT EXISTS `product_category` (

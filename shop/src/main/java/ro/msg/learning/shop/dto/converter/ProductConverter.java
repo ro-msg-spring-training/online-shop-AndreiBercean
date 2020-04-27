@@ -1,11 +1,11 @@
-package ro.msg.learning.shop.dto.builder;
+package ro.msg.learning.shop.dto.converter;
 
 import ro.msg.learning.shop.dto.ProductDTO;
 import ro.msg.learning.shop.model.Product;
 import ro.msg.learning.shop.model.ProductCategory;
 import ro.msg.learning.shop.model.Supplier;
 
-public class ProductBuilder {
+public class ProductConverter {
     public static ProductDTO generateDTOFromEntity(Product product){
         return new ProductDTO(
                 product.getProductId(),

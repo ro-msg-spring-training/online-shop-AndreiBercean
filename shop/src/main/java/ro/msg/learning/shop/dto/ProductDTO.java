@@ -3,11 +3,9 @@ package ro.msg.learning.shop.dto;
 import lombok.*;
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 public class ProductDTO {
 
     private Integer productId;
