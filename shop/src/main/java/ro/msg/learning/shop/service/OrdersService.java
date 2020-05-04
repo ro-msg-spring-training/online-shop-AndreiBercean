@@ -31,9 +31,9 @@ public class OrdersService {
         return ordersRepository.save(orders);
     }
 
-    public Integer delete(Orders orders) {
+    public Orders delete(Orders orders) {
         ordersRepository.deleteById(orders.getOrderId());
-        return orders.getOrderId();
+        return orders;
     }
 
 }

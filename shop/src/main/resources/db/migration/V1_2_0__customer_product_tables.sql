@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
     `first_name` varchar(20),
     `last_name` varchar(20),
     `username` varchar(20),
-    `password` varchar(20),
+    `password` varchar(60),
     `email` varchar(30)
 );
 

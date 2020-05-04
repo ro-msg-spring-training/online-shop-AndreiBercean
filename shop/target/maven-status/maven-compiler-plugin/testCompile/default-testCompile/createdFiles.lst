@@ -1,1 +1,6 @@
 ro\msg\learning\shop\ShopApplicationTests.class
+ro\msg\learning\shop\service\ServicePlaceholder.class
+ro\msg\learning\shop\StrategyTests.class
+ro\msg\learning\shop\tests\OrderInsertTest.class
+ro\msg\learning\shop\service\util\MostAbundantTest.class
+ro\msg\learning\shop\service\util\SingleLocationTest.class

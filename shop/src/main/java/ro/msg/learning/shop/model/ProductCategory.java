@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 @Table
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductCategory {

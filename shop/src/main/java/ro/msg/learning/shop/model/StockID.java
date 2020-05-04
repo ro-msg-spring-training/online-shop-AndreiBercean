@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 @Embeddable
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class StockID implements Serializable {

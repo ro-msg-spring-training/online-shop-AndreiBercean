@@ -45,7 +45,7 @@ public class ProductController {
     }
 
     @DeleteMapping()
-    public ResponseEntity<Integer> delete(@RequestBody ProductDTO productDTO) {
-        return ResponseEntity.ok(productService.delete(ProductConverter.generateEntityFromDTO(productDTO)));
+    public ResponseEntity<ProductDTO> delete(@RequestBody ProductDTO productDTO) {
+        return ResponseEntity.ok(ProductConverter.generateDTOFromEntity(productService.delete(ProductConverter.generateEntityFromDTO(productDTO))));
     }
 }

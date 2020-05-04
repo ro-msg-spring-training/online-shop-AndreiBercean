@@ -30,8 +30,8 @@ public class LocationService {
         return locationRepository.save(location);
     }
 
-    public Integer delete(Location location) {
+    public Location delete(Location location) {
         locationRepository.deleteById(location.getLocationId());
-        return location.getLocationId();
+        return location;
     }
 }

@@ -2,6 +2,7 @@ package ro.msg.learning.shop.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import ro.msg.learning.shop.dto.OrdersDTO;
 import ro.msg.learning.shop.model.OrderDetail;
 import ro.msg.learning.shop.repository.OrderDetailRepository;
 
@@ -26,12 +27,16 @@ public class OrderDetailService {
         return orderDetailRepository.save(orderDetail);
     }
 
+    public List<OrderDetail> insertAll(List<OrderDetail> list) {
+        return orderDetailRepository.saveAll(list);
+    }
+
     public OrderDetail update(OrderDetail orderDetail) {
         return orderDetailRepository.save(orderDetail);
     }
 
-    public Integer delete(OrderDetail orderDetail) {
+    public OrderDetail delete(OrderDetail orderDetail) {
         orderDetailRepository.deleteById(orderDetail.getId());
-        return 1;
+        return orderDetail;
     }
 }

@@ -42,8 +42,8 @@ public class StockService {
         return stockRepository.save(stock);
     }
 
-    public Integer delete(Stock stock) {
+    public Stock delete(Stock stock) {
         stockRepository.deleteById(stock.getId());
-        return 1;
+        return stock;
     }
 }

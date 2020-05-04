@@ -9,6 +9,7 @@ import java.sql.Date;
 @Entity
 @Table
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Revenue {

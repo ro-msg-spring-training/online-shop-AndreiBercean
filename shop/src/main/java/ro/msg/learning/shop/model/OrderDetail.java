@@ -8,6 +8,7 @@ import java.io.Serializable;
 @Entity
 @Table
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderDetail implements Serializable {

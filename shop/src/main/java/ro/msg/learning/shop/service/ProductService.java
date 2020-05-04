@@ -30,8 +30,8 @@ public class ProductService {
         return productRepository.save(product);
     }
 
-    public Integer delete(Product product) {
+    public Product delete(Product product) {
         productRepository.deleteById(product.getProductId());
-        return product.getProductId();
+        return product;
     }
 }

@@ -8,6 +8,7 @@ import java.io.Serializable;
 
 @Embeddable
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderDetailID implements Serializable {
